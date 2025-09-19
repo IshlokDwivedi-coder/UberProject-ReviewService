@@ -15,12 +15,9 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name = "bookingReview")   // This annotation will affect on database only not affect on pojo
-public class Review {
+@Inheritance (strategy = InheritanceType.JOINED)
+public class Review extends BaseModel{
 
-    @Id // This annotation make the id property a primary key of our table
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Identity means auto_Increment
-    // by default primary key chahiye to @GeneratedValue(strategy = GenerationType.something jo tummhe chahiye lagate hain
-    private Long id;
 
     @Column(nullable = false)
     private String content;
@@ -29,16 +26,6 @@ public class Review {
     private Double rating;
 
 
-    @Column(nullable = false)
-    @Temporal(TemporalType.TIMESTAMP)  // this annotaion tells spring about the formats of Date object to be stored i.e. Date/Time ? Timestamp
-    @CreatedDate    // This annotation tells spring only handle it for object creation
-    private Date createdAt;
-
-
-    @Column(nullable = false)
-    @Temporal(TemporalType.TIMESTAMP)
-    @LastModifiedDate   // This annotation tells spring only handle it for object update
-    private Date updatedAt;
 
     @Override
     public String toString() {
