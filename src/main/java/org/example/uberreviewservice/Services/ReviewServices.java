@@ -11,11 +11,14 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ReviewServices implements CommandLineRunner {
 
     private final BookingRepository bookingRepository;
+
+
     private final driverRepository driverRepository;
 
 
@@ -57,6 +60,20 @@ public class ReviewServices implements CommandLineRunner {
 //            System.out.println(review.getContent());
 //        }
 
-        List<Driver> drivers= driverRepository.findAll(); 
+//        List<Driver> drivers= driverRepository.findAll();
+
+//        Optional<Driver> driver=driverRepository.findById(1L);
+//        if(driver.isPresent()){
+//            System.out.println(driver.get().getName());
+//            List<Booking> b=driver.get().getBookings();
+//
+//
+//            for(Booking booking:b){
+//                System.out.println(booking.getId());
+//            }
+
+//        }
+        Optional<Driver> d=driverRepository.findByIdAndLicenseNo(1L,"DL121112");
+        System.out.println(d.get().getName());
     }
 }
