@@ -22,6 +22,8 @@ public class Driver extends BaseModel {
     @Column(nullable = false,unique = true)
     private  String licenseNo;
 
+    private String phoneNumber;
+
     // 1 : n , Driver : Booking
     @OneToMany(mappedBy = "driver",fetch = FetchType.EAGER)
     private List<Booking> bookings=new ArrayList<>();
