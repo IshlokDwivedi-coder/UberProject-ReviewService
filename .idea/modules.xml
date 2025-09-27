@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberReviewService.iml" filepath="$PROJECT_DIR$/.idea/modules/UberReviewService.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberReviewService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UberReviewService.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/UberSpringProject.iml" filepath="$PROJECT_DIR$/.idea/UberSpringProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.UberReviewService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.UberReviewService.main.iml" />
     </modules>
   </component>
 </project>

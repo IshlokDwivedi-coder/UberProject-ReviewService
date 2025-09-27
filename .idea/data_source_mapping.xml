@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$PROJECT_DIR$/UberReviewService/src/main/java/org/example/uberreviewservice/Repositories/driverRepository.java" value="2ae0fc8f-82a6-43d7-a462-9421505ce41b" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/2ae0fc8f-82a6-43d7-a462-9421505ce41b/console.sql" value="2ae0fc8f-82a6-43d7-a462-9421505ce41b" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/2ae0fc8f-82a6-43d7-a462-9421505ce41b/console_1.sql" value="2ae0fc8f-82a6-43d7-a462-9421505ce41b" />
   </component>
